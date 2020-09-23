@@ -1,21 +1,20 @@
 # Pseudocode: Find Largest Number
 
+<!--> I know that adding the quotes might seem misleading bc single quotes are v important in JS but it personally signals to me that I'm naming something<!-->
 ```text
-define procedure find_largest_number:
-  input: a pile of numbers, call it PILE
+spellout procedure "FindHighestNumber" :
+  input: a pile of numbers, call it "PILE"
 
-  look at first NUMBER in pile and write it on sticky note, call it MAX_SO_FAR
+  flip card to identify the NUMBER, record it and refer to it as "highest_number_now"
 
-  foreach NUMBER in PILE, do the following:
-    if NUMBER > MAX_SO_FAR, then:
-      replace MAX_SO_FAR with NUMBER on sticky note
-    end if
-  end foreach
+  for every NUMBER in the PILE:
+    if NUMBER > highest_number_now, then:
+    replace highest_number_now with the NUMBER on the "scratch card"
+    end process after examining all numbers
 
-  hand back MAX_SO_FAR sticky note
-end define procedure
+  print final highest_number_now
 
-let PILE be [10, 9, -2, 100, 17]
-call procedure find_largest_number with inputs: PILE // will give us 100
+end procedure
 
-```
+input includes: [8, 41, 36, 7, 900]
+signal procedure "FindHighestNumber" with input PILE
