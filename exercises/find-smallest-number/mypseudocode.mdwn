@@ -1,0 +1,17 @@
+# My Pseudocode: Find Smallest Number
+
+```text
+
+locate procedure FIND_SMALLEST_NUMBER
+  input: pile of NUMBERS, call it PILE
+
+  flip first card and record NUMBER displayed, call it SMALLEST_NUMBER_NOW
+
+  for every NUMBER in the PILE, do the following:
+    if NUMBER < SMALLEST_NUMBER_NOW then: replace SMALLEST_NUMBER_NOW with NUMBER
+
+  report final NUMBER
+end procedure
+
+PILE includes: [7, -10, 9, 34, 78]
+signal procedure FIND_SMALLEST_NUMBER with input: PILE
